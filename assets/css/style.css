@@ -741,6 +741,14 @@
 	color: white;
   } */
 
+  
+
+  .footer-widget{
+	/* border: 1px solid #444; */
+    height: 100%;
+    /* width: 100%; */
+  }
+
   .company-mark{
 	color: white !important;
   }

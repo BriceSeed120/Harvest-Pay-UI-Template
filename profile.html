@@ -139,72 +139,127 @@
                   <li> <a href="attendance-list.html"> <i class="bi bi-circle"></i><span>Attendance list</span> </a></li>
                   <li> <a href="manualAttendance.html"> <i class="bi bi-circle"></i><span>Manual attendance list</span> </a></li>
                   <li> <a href="employee-attendance-template-generate.html"> <i class="bi bi-circle"></i><span>Generate Template</span> </a></li>
+                  
                </ul>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#manage-employees" data-bs-toggle="collapse" href="#"> <i class="fa-solid fa-clipboard-user"></i><span>Manage Company</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                <ul id="manage-employees" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                   <li> <a href="Import-Attendance.html"> <i class="bi bi-circle"></i><span>Import Attendance</span> </a></li>
+                   <li> <a href="attendance-list.html"> <i class="bi bi-circle"></i><span>Attendance list</span> </a></li>
+                   <li> <a href="manualAttendance.html"> <i class="bi bi-circle"></i><span>Manual attendance list</span> </a></li>
+                   <li> <a href="employee-attendance-template-generate.html"> <i class="bi bi-circle"></i><span>Generate Template</span> </a></li>
+                   
+                </ul>
+             </li>
             <li class="nav-heading">Pages</li>
          </ul>
       </aside>
       <main id="main" class="main">
-         <section class="section dashboard">
-            <div class="container">
-               <div class="row col-container">
-                  <div class="col-lg-6 col" >
-                     <div class="card">
-                        <div class="card-header">Import Attendance (CSV)</div>
-                        <div class="card-body">
-                           <h5 class="card-title"></h5>
-                           <div class=""> <input class="form-control" type="file" id="formFile"></div>
-                           <!-- <br><br><br><br>    -->
-                           <div class="d-grid gap-2 mt-3"><button type="button" class="btn btn-primary"><i class="fa-solid fa-paperclip"></i> Import</button></div>
-                           
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-6 col">
-                     <div class="card h-100">
-                        <div class="card-header">CCN Import Attendance (CSV)</div>
-                        <div class="card-body">
-                           <h5 class="card-title"></h5>
-                           <div class="row">
-                                 <div class="col-lg-6">
-                                    <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
-                                    <div class=" d-grid gap-2" > <input type="date" class="form-control"></div>
+        <section class="section profile">
+           <div class="row">
+              <div class="col-xl-4">
+                 <div class="card">
+                    <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                       <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                       <h2>Brice NDE</h2>
+                       <h3>Admin</h3>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-xl-8">
+                 <div class="card">
+                    <div class="card-body pt-3">
+                       <ul class="nav nav-tabs nav-tabs-bordered">
+                          <li class="nav-item"> <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button></li>
+                          <li class="nav-item"> <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Edit Profile</button></li>
+                          <li class="nav-item"> <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Change Password</button></li>
+                       </ul>
+                       <div class="tab-content pt-2">
+                          <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                            <h5 class="card-title">Profile Details</h5>
+                             <div class="row">
+                                <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                                <div class="col-lg-9 col-md-8">Brice NDE</div>
+                             </div>
+                             <div class="row">
+                                <div class="col-lg-3 col-md-4 label">Address</div>
+                                <div class="col-lg-9 col-md-8">Cameroon, Douala, Bonapriso</div>
+                             </div>
+                             <div class="row">
+                                <div class="col-lg-3 col-md-4 label">Email</div>
+                                <div class="col-lg-9 col-md-8"><p href="#" class="__cf_email__" >nde.brice@seed120.com</p></div>
+                             </div>
+                             <div class="row">
+                                <div class="col-lg-3 col-md-4 label">Date of birth</div>
+                                <div class="col-lg-9 col-md-8">02/04/1989</div>
+                             </div>
+                             <div class="row">
+                                <div class="col-lg-3 col-md-4 label">Contact</div>
+                                <div class="col-lg-9 col-md-8">(+237) 690205360</div>
+                             </div>
+                             
+                          </div>
+                          <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+                             <form>
+                                <div class="row mb-3">
+                                   <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+                                   <div class="col-md-8 col-lg-9">
+                                      <img src="assets/img/profile-img.jpg" alt="Profile">
+                                      <div class="pt-2"> <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a> <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a></div>
+                                   </div>
+                                </div>
+                                <div class="row mb-3">
+                                   <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
+                                   <div class="col-md-8 col-lg-9"> <input name="fullName" type="text" class="form-control" id="fullName" value="Brice NDE"></div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                                    <div class="col-md-8 col-lg-9"> <input name="email" type="email" class="form-control" id="Email" value="nde.brice@seed120.com" disabled></div>
                                  </div>
-                                 <div class="col-lg-6" >
-                                    <label for="inputDate" class=" col-form-label">WP Date:</label>
-                                    <div class=" d-grid gap-2"> <input type="date" class="form-control"></div>
+                                <div class="row mb-3">
+                                   <label for="Country" class="col-md-4 col-lg-3 col-form-label">User ID</label>
+                                   <div class="col-md-8 col-lg-9"> <input name="country" type="text" class="form-control" id="Country" value="Cameroon" disabled></div>
+                                </div>
+                                <div class="row mb-3">
+                                   <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Contact</label>
+                                   <div class="col-md-8 col-lg-9"> <input name="phone" type="text" class="form-control" id="Phone" value="(+237) 690205360"></div>
+                                </div>
+                                <div class="row mb-3">
+                                   <label for="Email" class="col-md-4 col-lg-3 col-form-label">Adress</label>
+                                   <div class="col-md-8 col-lg-9"> <input name="email" type="email" class="form-control" id="Email" value="Cameroon, Douala, Bonapriso"></div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="Email" class="col-md-4 col-lg-3 col-form-label"></label>
+                                    <div class="text-center col-md-4 col-lg-3 d-grid gap-2 mt-3"> <button type="submit" class="btn btn-primary">Save Changes</button></div>
                                  </div>
-                           </div>
-                           <div class="d-grid gap-2 mt-3"> <input class="form-control" type="file" id="formFile"></div>
-                           <div class="d-grid gap-2 mt-3"><button type="button" class="btn btn-primary"><i class="fa-solid fa-paperclip"></i> Import</button></div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-6 mt-3 col">
-                     <div class="card ">
-                        <div class="card-header">Import Biometric Attendance (CSV)</div>
-                        <div class="card-body">
-                           <h5 class="card-title"></h5>
-                           <div class=""> <input class="form-control" type="file" id="formFile"></div>
-                           <div class="d-grid gap-2 mt-3"><button type="button" class="btn btn-primary"><i class="fa-solid fa-paperclip"></i> Import</button></div>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="col-lg-6 mt-3 col" style="height: 100% !important;">
-                     <div class="card" style="height: 100;">
-                        <div class="card-header">Import From Biometric Device</div>
-                        <div class="card-body">
-                           <div class="d-grid gap-2 mt-3"><button type="button" class="btn btn-primary"><i class="fa-solid fa-cloud-arrow-up"></i> Pull</button></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-               
-         </section>
-      </main>
+                               
+                             </form>
+                          </div>
+                          <div class="tab-pane fade pt-3" id="profile-change-password">
+                             <form>
+                                <div class="row mb-3">
+                                   <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                                   <div class="col-md-8 col-lg-9"> <input name="password" type="password" class="form-control" id="currentPassword"></div>
+                                </div>
+                                <div class="row mb-3">
+                                   <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                                   <div class="col-md-8 col-lg-9"> <input name="newpassword" type="password" class="form-control" id="newPassword"></div>
+                                </div>
+                                <div class="row mb-3">
+                                   <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
+                                   <div class="col-md-8 col-lg-9"> <input name="renewpassword" type="password" class="form-control" id="renewPassword"></div>
+                                </div>
+                                <div class="text-center"> <button type="submit" class="btn btn-primary">Change Password</button></div>
+                             </form>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </section>
+     </main>
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>  
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
