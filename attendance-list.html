@@ -156,26 +156,86 @@
     </header>
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-nav" id="sidebar-nav">
-            <li class="nav-item"> <a class="nav-link " href="index.html"> <i class="fa-solid fa-gauge"></i>
-                    <span>Dashboard</span> </a></li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i
-                        class="fa-solid fa-clipboard-user"></i><span>Manage Attendance</span><i
-                        class="bi bi-chevron-down ms-auto"></i> </a>
-                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li> <a href="Import-Attendance.html"> <i class="bi bi-circle"></i><span>Import Attendance</span>
-                        </a></li>
-                    <li> <a href="attendance-list.html"> <i class="bi bi-circle"></i><span>Attendance list</span> </a>
-                    </li>
-                    <li> <a href="manualAttendance.html"> <i class="bi bi-circle"></i><span>Manual attendance
-                                list</span> </a></li>
-                    <li> <a href="employee-attendance-template-generate.html"> <i class="bi bi-circle"></i><span>Generate
-                                Template</span> </a></li>
-                </ul>
-            </li>
-            <li class="nav-heading">Pages</li>
+           <li class="nav-item"> <a class="nav-link " href="index.html"> <i class="fa-solid fa-gauge"></i>  <span>Dashboard</span> </a></li>
+           <li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i class="fa-solid fa-clipboard-user"></i><span>Manage Attendance</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+              <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li> <a href="Import-Attendance.html"> <i class="bi bi-circle"></i><span>Import Attendance</span> </a></li>
+                 <li> <a href="attendance-list.html"> <i class="bi bi-circle"></i><span>Attendance list</span> </a></li>
+                 <li> <a href="manualAttendance.html"> <i class="bi bi-circle"></i><span>Manual attendance list</span> </a></li>
+                 <li> <a href="employee-attendance-template-generate.html"> <i class="bi bi-circle"></i><span>Generate Template</span> </a></li>
+              </ul>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#components-companies" data-bs-toggle="collapse" href="#"> <i class="fa-solid fa-building"></i><span>Manage Companies</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+              <ul id="components-companies" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li> <a href="/pages/Manage companies/companies.html"> <i class="bi bi-circle"></i><span>Companies</span> </a></li>
+                 <li> <a href="/pages/Manage companies/crs-import.html"> <i class="bi bi-circle"></i><span>Import CRS</span> </a></li>
+                 <li> <a href="/pages/Manage companies/seed-billing.html"> <i class="bi bi-circle"></i><span>Seed Billing</span> </a></li>
+                 <li> <a href="/pages/Manage companies/country-holydays.html"> <i class="bi bi-circle"></i><span>Country Holidays</span> </a></li>
+              </ul>
+           </li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Department Management/departmeent.html"> <i class="fa-solid fa-building-flag"></i>  <span>Manage Departments</span> </a></li>
+           <li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#components-employees" data-bs-toggle="collapse" href="#"> <i class="fa-solid fa-building-user"></i><span>Manage Employees</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+              <ul id="components-employees" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li> <a href="/pages/Employee Management/Employees.html"> <i class="bi bi-circle"></i><span>Employees</span> </a></li>
+                 <li> <a href="/pages/Employee Management/employee-ajustment.html"> <i class="bi bi-circle"></i><span>Employee Ajustement</span> </a></li>
+                 <li> <a href="/pages/Employee Management/contact-ends.html"> <i class="bi bi-circle"></i><span>Contracts Ends <span class="badge bg-danger">   (0)   </span></span> </a></li>
+                 <li> <a href="/pages/Employee Management/disabled-employees.html"> <i class="bi bi-circle"></i><span>Disabled Employees</span> </a></li>
+              </ul>
+           </li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Overtime Management/overtime-management.html"> <i class="fa-solid fa-business-time"></i>  <span>Manage Overtimes</span> </a></li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Allowance Management/allowance-management.html"> <i class="fa-solid fa-arrow-right-arrow-left"></i>  <span>Manage Allowances</span> </a></li>
+           <li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#components-jobs" data-bs-toggle="collapse" href="#"> <i class="fa-solid fa-briefcase"></i><span>Manage Jobs</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+              <ul id="components-jobs" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li> <a href="/pages/Jobs Management/job-types.html"> <i class="bi bi-circle"></i><span>Jobs Types</span> </a></li>
+                 <li> <a href="/pages/Jobs Management/job-categories.html"> <i class="bi bi-circle"></i><span>Job Categories</span> </a></li>
+                 <li> <a href="/pages/Jobs Management/jobs-configuration.html"> <i class="bi bi-circle"></i><span>Job Configuration</span> </a></li>
+              </ul>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#components-leave" data-bs-toggle="collapse" href="#"> <i class="fa-solid fa-person-booth"></i><span>Manage Leaves</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+              <ul id="components-leave" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li> <a href="/pages/Leaves Management/leave-requisition.html"> <i class="bi bi-circle"></i><span>Leave Requisition</span> </a></li>
+                 <li> <a href="/pages/Leaves Management/leave-type.html"> <i class="bi bi-circle"></i><span>Leave Type</span> </a></li>
+              </ul>
+           </li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Manage Users/user-management.html"> <i class="fa-solid fa-users"></i>   <span>User Management</span> </a></li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Role Management/role-management.html"> <i class="fa-solid fa-user-group"></i>  <span>Roles Management</span> </a></li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Tax Management/tax-management.html"> <i class="fa-solid fa-hand-holding-dollar"></i>  <span>Tax Management</span> </a></li>
+           <li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#components-reports" data-bs-toggle="collapse" href="#"> <i class="fa-solid fa-file-invoice"></i> <span>Reports</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+              <ul id="components-reports" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                 <li> <a href="/pages/Reports/system-log.html"><i class="bi bi-circle"></i><span>Leave Requisition</span> </a></li>
+                 <li> <a href="/pages/Reports/basic.html"> <i class="bi bi-circle"></i><span>Basic</span> </a></li>
+                 <li> <a href="/pages/Reports/attendance.html"> <i class="bi bi-circle"></i><span>Attendance</span> </a></li>
+                 <li> <a href="/pages/Reports/attendance2.html"> <i class="bi bi-circle"></i><span>Attendance 2</span> </a></li>
+                 <li> <a href="/pages/Reports/sage-posting.html"> <i class="bi bi-circle"></i><span>Sage Posting</span> </a></li>
+                 <li> <a href="/pages/Reports/payroll-treatment.html"> <i class="bi bi-circle"></i><span>Payroll Treatment</span> </a></li>
+                 <li> <a href="/pages/Reports/payroll.html"> <i class="bi bi-circle"></i><span>Payroll</span> </a></li>
+                 <li> <a href="/pages/Reports/payroll-reports.html"> <i class="bi bi-circle"></i><span>Payroll details</span> </a></li>
+                 <li> <a href="/pages/Reports/data.html"> <i class="bi bi-circle"></i><span>Data</span> </a></li>
+                 <li> <a href="/pages/Reports/benefit-paid.html"> <i class="bi bi-circle"></i><span>Accumulated Leave/span> </a></li>
+                 <li> <a href="/pages/Reports/timesheet-list.html"> <i class="bi bi-circle"></i><span>Timesheet List</span> </a></li>
+                 <li> <a href="/pages/Reports/statistic-report.html"> <i class="bi bi-circle"></i><span>Statistic Report</span> </a></li>
+                 <li> <a href="/pages/Reports/cnps-filling.html"> <i class="bi bi-circle"></i><span>CNPS Filling</span> </a></li>
+                 <li> <a href="/pages/Reports/employee-report.html"> <i class="bi bi-circle"></i><span>Employee Report</span> </a></li>
+                 <li> <a href="/pages/Reports/indicative-ration-report.html"> <i class="bi bi-circle"></i><span>Indicative Ration Report</span> </a></li>
+                 <li> <a href="/pages/Reports/IR-report.html"> <i class="bi bi-circle"></i><span>IR Report</span> </a></li>
+                 <li> <a href="/pages/Reports/CNAMGS-report.html"> <i class="bi bi-circle"></i><span>CNAMGS Report</span> </a></li>
+                 <li> <a href="/pages/Reports/DTS-report.html"> <i class="bi bi-circle"></i><span>DTS Report</span> </a></li>
+                 <li> <a href="/pages/Reports/company-payslip-health.html"> <i class="bi bi-circle"></i><span>Company Payslip Health</span> </a></li>
+              </ul>
+           </li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/files-management/files-management.html"> <i class="fa-solid fa-file"></i>  <span>File Management</span> </a></li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Bank/bank-management.html"> <i class="fa-solid fa-money-bill-transfer"></i> <span>Bank Management</span> </a></li>
+           <li class="nav-item"> <a class="nav-link " href="/pages/Settings/languages.html"> <i class="fa-solid fa-gear"></i>  <span>Settins</span> </a></li>
+
+           <!-- <li class="nav-heading">Pages</li> -->
         </ul>
-    </aside>
+     </aside>
     <main id="main" class="main">
         <section class="section dashboard">
             <div class="row">
@@ -212,7 +272,7 @@
                                             type="text"></div>
                                 </div>
                                 <div class="dataTable-container">
-                                    <table class="table datatable dataTable-table">
+                                    <table class="table datatable table-responsive dataTable-table">
                                         <thead>
                                             <tr>
                                                 <th scope="col" data-sortable="" style="width: auto;"><a href="#"

@@ -10,7 +10,11 @@
 	/* background: #f6f9ff; */
 	color: #444444;
   }
-  
+
+  table .btn{
+	font-size: 11px !important;
+  }
+
   a {
 	color: #003CBF;
 	text-decoration: none;
@@ -24,7 +28,29 @@
   h1, h2, h3, h4, h5, h6 {
 	font-family: 'Poppins', sans-serif;
   }
-  
+
+
+  /*-------------------------------------------------------------
+  #Scrollbar
+  --------------------------------------------------------------*/
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #003CBF;
+}
+
   /*--------------------------------------------------------------
   # Main
   --------------------------------------------------------------*/
@@ -601,23 +627,35 @@
 	align-items: center;
 	font-size: 15px;
 	font-weight: 600;
-	color: #003CBF;
+	color: #012970;
 	transition: 0.3;
-	background: #f6f9ff;
+	/* background: #f6f9ff; */
 	padding: 10px 15px;
 	border-radius: 4px;
+  }
+.table-responsive{	
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+	}
+  .bi-chevron-down {
+	color: #899bbd !important;
+  }
+
+  .sidebar-nav .nav-link:active{
+	background: #f6f9ff; 
   }
   .sidebar-nav .nav-link i {
 	font-size: 16px;
 	margin-right: 10px;
-	color: #003CBF;
+	color: #012970;
   }
   .sidebar-nav .nav-link.collapsed {
 	color: #012970;
 	background: #fff;
   }
   .sidebar-nav .nav-link.collapsed i {
-	color: #899bbd;
+	color: #012970;
   }
   .sidebar-nav .nav-link:hover {
 	color: #003CBF;
