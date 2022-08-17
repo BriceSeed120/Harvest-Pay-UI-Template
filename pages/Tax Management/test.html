@@ -222,112 +222,207 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Treatment Report</h5>
-                        <form class="row g-3">
-                           <div class="col-lg-6">
-                              <label for="country" class="form-label">Select Country</label>
-                              <select id="country" name="type" class="form-control">
-                                 <option value=""></option>
-                                 <option value="employee">Cameroon</option>
-                                 <option value="allowance">Gabon</option>
-                                 <option value="Adjustment">RDC</option>
-                                 <option value="Adjustment">Ivory Coast</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-6">
-                              <label for="company" class="form-label">Select Company</label>
-                              <select id="company" name="type" class="form-control">
-                                 <option value=""></option>
-                                 <option value="employee">Cameroon</option>
-                                 <option value="allowance">Gabon</option>
-                                 <option value="Adjustment">RDC</option>
-                                 <option value="Adjustment">Ivory Coast</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-6">
-                              <label for="company" class="form-label">Matricules</label>
-                              <input type="text" name="" id="" class="form-control">
-                           </div>
-                           <div class="col-lg-6">
-                              <label for="company" class="form-label">Batch Number</label>
-                              <input type="text" name="" id="" class="form-control">
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="form-check"> <input class="form-check-input" type="checkbox" id="gridCheck2" checked=""> <label class="form-check-label" for="gridCheck2"> Locked Payslips only </label></div>
-                           </div>
-                           <div class="col-lg-2"></div>  
-                           <div class="col-lg-4">                              
-                              <div class="d-grid gap-2">
-                                 <label for="company" class="form-label"></label>
-                                 <button type="button" class="btn btn-primary">
-                                    <i class="fa-solid fa-search"></i> Search
-                                 </button>
+                        <h5 class="card-title">Taxes Management</h5>
+                        <div class="">
+                           <div class="">
+                              <h5 class="card-title"></h5>
+                              <ul class="nav nav-tabs nav-tabs-bordered d-flex" id="borderedTabJustified" role="tablist">
+                                 <li class="nav-item flex-fill" role="presentation"> <button class="nav-link w-100 active" id="cameroon-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-home" type="button" role="tab" aria-controls="home" aria-selected="true">Gabon</button></li>
+                                 <li class="nav-item flex-fill" role="presentation"> <button class="nav-link w-100" id="gabon-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Côte d'Ivoire</button></li>
+                                 <li class="nav-item flex-fill" role="presentation"> <button class="nav-link w-100" id="rdc-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-contact" type="button" role="tab" aria-controls="contact" aria-selected="false">RDC</button></li>
+                                 <li class="nav-item flex-fill" role="presentation"> <button class="nav-link w-100" id="civ-tab" data-bs-toggle="tab" data-bs-target="#bordered-justified-contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Côte d'Ivoire</button></li>
+                              </ul>
+                              <div id="borderedTabJustifiedContent">
+                                 <div class="tab-pane fade active show" id="bordered-justified-home" role="tabpanel" aria-labelledby="cameroon-tab">
+                                    <div class="mt-4">
+                                       <div class="row">
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Cnss Employee Name</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Cnamgs employee</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Tcs employee</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Irpp employee</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Cnss employee</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Cnamgs employee</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Tcs employee</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>                                          
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Irpp employee</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">xaf</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Cfp</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                             <label for="inputName5" class="form-label">Cfp</label> 
+                                             <input type="text" class="form-control" id="inputName5">
+                                          </div>
+                                          
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="bordered-justified-profile" role="tabpanel" aria-labelledby="gabon-tab">
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <div class="card-title">Ivory Tax Setup</div>
+                                          <div class="row">
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Old Age Pension Employee</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Universal mutual health insurance (CMU)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Universal mutual health insurance (CMU)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Old Age Pension Employer</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">FAMILY ALLOWANCE</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Professional Risk</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">ITS (Tax on Salary Treatment) Employer</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>                                          
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">ITS Employer For Foreign Employee</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Apprentiship Tax (TA)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Tax on continuous professional Training (TFPC)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">TFPC End Of Year</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="bordered-justified-contact" role="tabpanel" aria-labelledby="rdc-tab"> 
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <div class="card-title">Ivory Tax Setup</div>
+                                          <div class="row">
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Old Age Pension Employee</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Universal mutual health insurance (CMU)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Universal mutual health insurance (CMU)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Old Age Pension Employer</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">FAMILY ALLOWANCE</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Professional Risk</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">ITS (Tax on Salary Treatment) Employer</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>                                          
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">ITS Employer For Foreign Employee</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Apprentiship Tax (TA)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">Tax on continuous professional Training (TFPC)</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             <div class="col-md-6 mt-3">
+                                                <label for="inputName5" class="form-label">TFPC End Of Year</label> 
+                                                <input type="text" class="form-control" id="inputName5">
+                                             </div>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="bordered-justified-contact" role="tabpanel" aria-labelledby="civ-tab"> 
+                                    <div class="mt-4 dataTable-container">
+                                       <table id="civtab" class="table table-striped dataTable no-footer">
+                                          <thead>
+                                                <tr>
+                                                   <th>#</th>
+                                                   <th>ID</th>
+                                                   <th>Name</th>
+                                                   <th>Country</th>
+                                                   <th>Actions</th>
+                                                </tr>
+                                          </thead>
+                                          <tbody>
+                                                <tr>
+                                                   <td>01</td>
+                                                   <td>178</td>
+                                                   <td>Prime de Panier F.</td>
+                                                   <td>Côte d'Ivoire</td>
+                                                   <td>
+                                                      <a href="view-invoice.html" class="btn btn-sm btn-primary">Edit</a>
+                                                      <a href="view-invoice.html" class="btn btn-sm btn-danger">Delete</a>
+                                                   </td>
+                                                </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
                            </div>
                         </div>
-                     </form>
+                       </div>
                      <br>
-                     <div class="tab-pane fade active show" id="bordered-justified-home" role="tabpanel" aria-labelledby="cameroon-tab">
-                        <div class="mt-4 dataTable-container">
-                              <table id="example" class="table table-striped table-responsive dataTable no-footer">
-                                 <thead>
-                                       <tr>
-                                          <th>ID</th>
-                                          <th>Batch No</th>
-                                          <th>Client Code</th>
-                                          <th>Client Name</th>
-                                          <th>Employee Number</th>
-                                          <th>Employees Name</th>
-                                          <th>Bank Acc Name</th>
-                                          <th>Bank Acc No</th>
-                                          <th>Bank Name</th>
-                                          <th>Salary</th>
-                                          <th>Housing Allowance</th>
-                                          <th>CNPS Base</th>
-                                          <th>Tax Base</th>
-                                          <th>CNPS</th>
-                                          <th>IRPP</th>
-                                          <th>CAC/IRPP</th>
-                                          <th>Advance Deducted</th>
-                                          <th>Other deductions</th>
-                                          <th>Monthly Loan Deducted</th>
-                                          <th>CFC</th>
-                                          <th>FNE</th>
-                                          <th>OLD Age PENSION</th>
-                                          <th>TDL</th>
-                                          <th>Roundeed Payroll</th>
-                                          <th>Net to pay</th>
-                                          <th>Salary Costs</th>
-                                       </tr>
-                                 </thead>
-                                 <tbody>
-                                       <tr>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                          <td></td>
-                                       </tr>
-                                 </tbody>
-                              </table>
-                        </div>
-                     </div>
                 </div>
             </div>
         </div>
